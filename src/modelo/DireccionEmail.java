@@ -21,4 +21,21 @@ public class DireccionEmail {
 	public String toString() {
 		return direccionEmail;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		DireccionEmail other = (DireccionEmail) obj;
+		if (direccionEmail == null) {
+			if (other.direccionEmail != null)
+				return false;
+		} else if (!direccionEmail.equals(other.direccionEmail))
+			return false;
+		return true;
+	}
 }
