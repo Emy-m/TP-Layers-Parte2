@@ -23,7 +23,7 @@ public class ReconocimientoCumpleaños {
 		return empleado.empleadoCumpleAñosEnFecha(new FechaDeNacimiento(fechaDeCumpleaños));
 	}
 	
-	public void enviarReconocimientoDeCumpleañosAEmpleados() throws DatosInvalidosEmpleadoException, SmtpException {
+	public void enviarReconocimientoDeCumpleañosAEmpleados() throws Exception {
 		ArrayList<Empleado> empleados = almacenamientoEmpleados.devolverEmpleadosCumpleañeros();
 		LocalDate hoy = LocalDate.now();
 		

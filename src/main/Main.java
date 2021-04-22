@@ -33,6 +33,8 @@ public class Main {
 			System.out.println("Error creando los empleados " + e.getMessage());
 		} catch (SmtpException e) {
 			System.out.println("Error enviando el reconocimiento de cumpleaños " + e.getMessage());
+		} catch (Exception e) {
+			System.out.println("Error inesperado " + e.getMessage());
 		}
 	}
 }
